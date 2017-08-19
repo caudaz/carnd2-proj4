@@ -28,6 +28,7 @@ std::string hasData(std::string s) {
   return "";
 }
 
+  int iter     = 0;
   int counter  = 0;
 
 int main()
@@ -77,7 +78,7 @@ int main()
 		  else if(throttle_value < -1.0){throttle_value = -1.0;}		  
           
           // DEBUG
-          std::cout << "CTE: " << cte << " StrVal= " << steer_value << " ThrVal= " << throttle_value << " Counter= " << counter <<std::endl;
+          std::cout << "CTE: " << cte << " StrVal= " << steer_value << " ThrVal= " << throttle_value << " Counter= " << counter << " Iter= " << iter <<std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
@@ -89,7 +90,8 @@ int main()
 		  if (counter > 200){
 			  std::string reset_msg = "42[\"reset\",{}]";
 			  ws.send(reset_msg.data(), reset_msg.length(), uWS::OpCode::TEXT); 
-              counter = 0;			  
+              counter = 0;	
+              iter = iter + 1;			  
 		  }
 		  counter = counter + 1;
         }
