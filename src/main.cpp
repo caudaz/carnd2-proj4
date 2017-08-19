@@ -28,10 +28,14 @@ std::string hasData(std::string s) {
   return "";
 }
 
+  int counter  = 0;
+
 int main()
 {
   uWS::Hub h;
 
+
+  
   PID pid;
   // TODO: Initialize the pid variable.
   pid.Init(0.15, 0.001, 2.0);
@@ -73,7 +77,7 @@ int main()
 		  else if(throttle_value < -1.0){throttle_value = -1.0;}		  
           
           // DEBUG
-          std::cout << "CTE: " << cte << " StrVal= " << steer_value << " ThrVal= " << throttle_value << std::endl;
+          std::cout << "CTE: " << cte << " StrVal= " << steer_value << " ThrVal= " << throttle_value << " Counter= " << counter <<std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
@@ -81,6 +85,13 @@ int main()
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
           // std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
+		  
+		  if (counter > 200){
+			  std::string reset_msg = "42[\"reset\",{}]";
+			  ws.send(reset_msg.data(), reset_msg.length(), uWS::OpCode::TEXT); 
+              counter = 0;			  
+		  }
+		  counter = counter + 1;
         }
       } else {
         // Manual driving
