@@ -68,16 +68,16 @@ int main()
 		  PID speed_pid;
 		  speed_pid.Init(0.1, 0.0, 0.0);  
 		  speed_pid.UpdateError(speed - target_speed);
-		  double throttle_value  = speed_pid.TotalError();
+		  double throttle_value  = - speed_pid.TotalError();
 		  if     (throttle_value > +1.0){throttle_value = +1.0;}
 		  else if(throttle_value < -1.0){throttle_value = -1.0;}		  
           
           // DEBUG
-          std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
+          std::cout << "CTE: " << cte << " StrVal= " << steer_value << " ThrVal= " << throttle_value << std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
-          msgJson["throttle"] = 0.3;
+          msgJson["throttle"] = throttle_value; // Default = 0.3;
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
           // std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
