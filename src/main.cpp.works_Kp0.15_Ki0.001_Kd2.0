@@ -63,14 +63,7 @@ int main()
 		  if (steer_value < -1.0) { steer_value = -1.0;}
 		  if (steer_value > +1.0) { steer_value = +1.0;}
 
-		  // UDACITY Throttle PID https://discussions.udacity.com/t/car-veering-off/312738/4
-		  const double target_speed = 35.0;
-		  PID speed_pid;
-		  speed_pid.Init(0.1, 0.0, 0.0);  
-		  speed_pid.UpdateError(speed - target_speed);
-		  double throttle_value  = speed_pid.TotalError();
-		  if     (throttle_value > +1.0){throttle_value = +1.0;}
-		  else if(throttle_value < -1.0){throttle_value = -1.0;}		  
+		  
           
           // DEBUG
           std::cout << "CTE: " << cte << " Steering Value: " << steer_value << std::endl;
