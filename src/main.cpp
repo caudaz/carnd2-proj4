@@ -123,7 +123,7 @@ int main()
 		  
           // reset to a new iteration if:
 		  // step>1000 or outside track or slow speed (outside track most likely) 
-		  if (step > 1000 || (fabs(cte)>3.0&&step>50) || (fabs(speed)<4.0 && step>50)){
+		  if (step > 1600 || (fabs(cte)>3.0&&step>50) || (fabs(speed)<4.0 && step>50)){
 			  std::string reset_msg = "42[\"reset\",{}]";
 			  ws.send(reset_msg.data(), reset_msg.length(), uWS::OpCode::TEXT); 
               step = 0;	
