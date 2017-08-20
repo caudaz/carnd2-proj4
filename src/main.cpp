@@ -28,8 +28,8 @@ std::string hasData(std::string s) {
   return "";
 }
 
-  int iter     = 0;
-  int counter  = 0;
+  int iter = 0;
+  int step = 0;
 
 int main()
 {
@@ -63,6 +63,10 @@ int main()
           * NOTE: Feel free to play around with the throttle and speed. Maybe use
           * another PID controller to control the speed!
           */
+		  
+		  if (iter == 3){pid.Init(0.20, 0.001, 2.0);}
+		  if (iter == 4){pid.Init(0.30, 0.001, 2.0);}
+		  
 		  pid.UpdateError(cte);
 		  steer_value = - pid.TotalError();
 		  if (steer_value < -1.0) { steer_value = -1.0;}
@@ -76,9 +80,13 @@ int main()
 		  double throttle_value  = - speed_pid.TotalError();
 		  if     (throttle_value > +1.0){throttle_value = +1.0;}
 		  else if(throttle_value < -1.0){throttle_value = -1.0;}		  
+
+          if (step == 0){
+			 std::cout << "PID Kp=" << pid.Kp << " PID Ki=" << pid.Ki << " PID Kd=" << pid.Kd  << std::endl;	  
+		  }
           
           // DEBUG
-          std::cout << "CTE: " << cte << " StrVal= " << steer_value << " ThrVal= " << throttle_value << " Counter= " << counter << " Iter= " << iter <<std::endl;
+          std::cout << "Iter=" << iter << " Step=" << step << " CTE=" << cte << " StrVal=" << steer_value << " ThrVal=" << throttle_value <<  std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
@@ -86,20 +94,24 @@ int main()
           auto msg = "42[\"steer\"," + msgJson.dump() + "]";
           // std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
-		  
-		  if (counter > 200){
+
+		  step = step + 1;		  
+		  if (step > 200){
 			  std::string reset_msg = "42[\"reset\",{}]";
 			  ws.send(reset_msg.data(), reset_msg.length(), uWS::OpCode::TEXT); 
-              counter = 0;	
+              step = 0;	
               iter = iter + 1;			  
 		  }
-		  counter = counter + 1;
+
+
         }
+
       } else {
         // Manual driving
         std::string msg = "42[\"manual\",{}]";
         ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
       }
+
     }
   });
 
