@@ -47,7 +47,10 @@ int main()
   
   PID pid;
   // TODO: Initialize the pid variable.
-  pid.Init(0.30, 0.001, 1.0);
+  if (iter == 0 && step ==0 ){pid.Init(0.00, 0.001, 0.00);std::cout << "hi0" << std::endl;}
+
+
+  
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
@@ -71,12 +74,16 @@ int main()
           * NOTE: Feel free to play around with the throttle and speed. Maybe use
           * another PID controller to control the speed!
           */
+		  if (step ==0 && iter > 0 ){pid.Init(pid.Kp + .05, pid.Ki, pid.Kd);}
+		  if (step ==0 && iter > 0 && (iter % 50 == 0)){pid.Init(0.00, pid.Ki, pid.Kd + .05);}
+/* 		  if (iter == 2 && step ==0 ){pid.Init(0.10, 0.001, 4.0);}	  
+		  if (iter == 3 && step ==0 ){pid.Init(0.05, 0.001, 2.0);}
+		  if (iter == 4 && step ==0 ){pid.Init(0.02, 0.001, 5.0);}
+		  if (iter == 5 && step ==0 ){pid.Init(0.15, 0.001, 2.0);}
+		  if (iter == 6 && step ==0 ){pid.Init(0.35, 0.001, 2.0);}
+		  if (iter == 7 && step ==0 ){pid.Init(0.15, 0.001, 2.0);}
+		  if (iter == 8 && step ==0 ){pid.Init(0.15, 0.001, 2.0);}   */
 
-		  if (iter == 1){pid.Init(0.20, 0.001, 1.0);}
-		  if (iter == 2){pid.Init(0.10, 0.001, 4.0);}		  
-		  if (iter == 3){pid.Init(0.05, 0.001, 2.0);}
-		  if (iter == 4){pid.Init(0.02, 0.001, 5.0);}
-		  if (iter == 5){pid.Init(0.15, 0.001, 2.0);}
 
           // Steer PID		  
 		  pid.UpdateError(cte);
@@ -103,14 +110,14 @@ int main()
 		  mean_error_squared = accu_error_squared / (step + 1);
           
           // DEBUG
-          std::cout << "Iter=" << iter 
+/*           std::cout << "Iter=" << iter 
 		            << " Step=" << step 
 					<< " CTE=" << cte 
 					<< " StrVal=" << steer_value 
 					<< " ThrVal=" << throttle_value 
 					<< " AccumE=" << accu_error_squared 
 					<< " MeanE=" <<  mean_error_squared 
-					<<  std::endl;
+					<<  std::endl; */
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
