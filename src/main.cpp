@@ -31,6 +31,14 @@ std::string hasData(std::string s) {
   int iter = 0;
   int step = 0;
 
+  float accu_error_squared = 0.0;
+  float mean_error_squared = 0.0;
+  
+  float mean_error_squared_best = 0.0;
+  float kp_best = 0.0;
+  float ki_best = 0.0;
+  float kd_best = 0.0;
+  
 int main()
 {
   uWS::Hub h;
@@ -39,7 +47,7 @@ int main()
   
   PID pid;
   // TODO: Initialize the pid variable.
-  pid.Init(0.15, 0.001, 2.0);
+  pid.Init(0.30, 0.001, 1.0);
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
@@ -63,16 +71,20 @@ int main()
           * NOTE: Feel free to play around with the throttle and speed. Maybe use
           * another PID controller to control the speed!
           */
-		  
-		  if (iter == 3){pid.Init(0.20, 0.001, 2.0);}
-		  if (iter == 4){pid.Init(0.30, 0.001, 2.0);}
-		  
+
+		  if (iter == 1){pid.Init(0.20, 0.001, 1.0);}
+		  if (iter == 2){pid.Init(0.10, 0.001, 4.0);}		  
+		  if (iter == 3){pid.Init(0.05, 0.001, 2.0);}
+		  if (iter == 4){pid.Init(0.02, 0.001, 5.0);}
+		  if (iter == 5){pid.Init(0.15, 0.001, 2.0);}
+
+          // Steer PID		  
 		  pid.UpdateError(cte);
 		  steer_value = - pid.TotalError();
 		  if (steer_value < -1.0) { steer_value = -1.0;}
 		  if (steer_value > +1.0) { steer_value = +1.0;}
 
-		  // UDACITY Throttle PID https://discussions.udacity.com/t/car-veering-off/312738/4
+		  // UDACITY Throttle PID
 		  const double target_speed = 35.0;
 		  PID speed_pid;
 		  speed_pid.Init(0.1, 0.0, 0.0);  
@@ -82,11 +94,23 @@ int main()
 		  else if(throttle_value < -1.0){throttle_value = -1.0;}		  
 
           if (step == 0){
-			 std::cout << "PID Kp=" << pid.Kp << " PID Ki=" << pid.Ki << " PID Kd=" << pid.Kd  << std::endl;	  
+			 std::cout << "*********** ITER=" << iter
+			           << " ***********  PID Kp=" << pid.Kp << " PID Ki=" << pid.Ki << " PID Kd=" << pid.Kd << std::endl;	  
 		  }
+
+          // Error metric
+		  accu_error_squared = accu_error_squared + pow(cte, 2.0);
+		  mean_error_squared = accu_error_squared / (step + 1);
           
           // DEBUG
-          std::cout << "Iter=" << iter << " Step=" << step << " CTE=" << cte << " StrVal=" << steer_value << " ThrVal=" << throttle_value <<  std::endl;
+          std::cout << "Iter=" << iter 
+		            << " Step=" << step 
+					<< " CTE=" << cte 
+					<< " StrVal=" << steer_value 
+					<< " ThrVal=" << throttle_value 
+					<< " AccumE=" << accu_error_squared 
+					<< " MeanE=" <<  mean_error_squared 
+					<<  std::endl;
 
           json msgJson;
           msgJson["steering_angle"] = steer_value;
@@ -95,15 +119,28 @@ int main()
           // std::cout << msg << std::endl;
           ws.send(msg.data(), msg.length(), uWS::OpCode::TEXT);
 
-		  step = step + 1;		  
-		  if (step > 200){
+		  step = step + 1;	
+		  
+          // reset to a new iteration if:
+		  // step>1000 or outside track or slow speed (outside track most likely) 
+		  if (step > 1000 || (fabs(cte)>3.0&&step>50) || (fabs(speed)<4.0 && step>50)){
 			  std::string reset_msg = "42[\"reset\",{}]";
 			  ws.send(reset_msg.data(), reset_msg.length(), uWS::OpCode::TEXT); 
               step = 0;	
-              iter = iter + 1;			  
+			  if (iter == 0){ 
+			      mean_error_squared_best = mean_error_squared; 
+				  kp_best = pid.Kp; ki_best = pid.Ki; kd_best = pid.Kd;
+			  }
+              if ((iter > 0) && ( mean_error_squared_best > mean_error_squared)){
+				mean_error_squared_best = mean_error_squared;
+				kp_best = pid.Kp; ki_best = pid.Ki; kd_best = pid.Kd;
+			  }
+              std::cout << "mean_error_squared_best=" << mean_error_squared_best
+            			<< " kp_best=" << kp_best << " ki_best=" << ki_best << " kd_best=" << kd_best << std::endl;		
+			  accu_error_squared = 0.0;
+              iter = iter + 1;	
 		  }
-
-
+		  
         }
 
       } else {
