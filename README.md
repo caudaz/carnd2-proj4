@@ -1,92 +1,113 @@
-# CarND-Controls-PID
-Self-Driving Car Engineer Nanodegree Program
+**Self-Driving Car Engineer Nanodegree**
 
----
+**Term2 – Project4: PID Controller**
 
-## Dependencies
+![](./media/image1.png)
 
-* cmake >= 3.5
- * All OSes: [click here for installation instructions](https://cmake.org/install/)
-* make >= 4.1
-  * Linux: make is installed by default on most Linux distros
-  * Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
-  * Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
-* gcc/g++ >= 5.4
-  * Linux: gcc / g++ is installed by default on most Linux distros
-  * Mac: same deal as make - [install Xcode command line tools]((https://developer.apple.com/xcode/features/)
-  * Windows: recommend using [MinGW](http://www.mingw.org/)
-* [uWebSockets](https://github.com/uWebSockets/uWebSockets)
-  * Run either `./install-mac.sh` or `./install-ubuntu.sh`.
-  * If you install from source, checkout to commit `e94b6e1`, i.e.
-    ```
-    git clone https://github.com/uWebSockets/uWebSockets 
-    cd uWebSockets
-    git checkout e94b6e1
-    ```
-    Some function signatures have changed in v0.14.x. See [this PR](https://github.com/udacity/CarND-MPC-Project/pull/3) for more details.
-* Simulator. You can download these from the [project intro page](https://github.com/udacity/self-driving-car-sim/releases) in the classroom.
+**INTRODUCTION**
 
-There's an experimental patch for windows in this [PR](https://github.com/udacity/CarND-PID-Control-Project/pull/3)
+The purpose of the project is to build a PID controller for UDACITY’s
+car simulator. The PID controller should be able to steer the car going
+around the track loop without departing from the lane.
 
-## Basic Build Instructions
+**PID controllers**
 
-1. Clone this repo.
-2. Make a build directory: `mkdir build && cd build`
-3. Compile: `cmake .. && make`
-4. Run it: `./pid`. 
+PID stands for proportional, integral, and derivative controller. They
+are used for loop feedback mechanism. Examples of PID are cruise control
+on cars.
 
-## Editor Settings
+On this project the error(t) values is the Cross Track Error (CTE). The
+constants for the PID controller are Kp, Ki, and Kd. U\[t) is the steer
+input, that ranges from -1 to +1, but translates from -25deg to 25deg of
+steer. The control function is:
 
-We've purposefully kept editor configuration files out of this repo in order to
-keep it as simple and environment agnostic as possible. However, we recommend
-using the following settings:
+![](./media/image2.png)
 
-* indent using spaces
-* set tab width to 2 spaces (keeps the matrices in source code aligned)
+These constants will be found by loop tuning.
 
-## Code Style
+**PID implementation on C++ code**
 
-Please (do your best to) stick to [Google's C++ style guide](https://google.github.io/styleguide/cppguide.html).
+File PID.cpp contains the PID class:
 
-## Project Instructions and Rubric
+-   Initializes the PID
 
-Note: regardless of the changes you make, your project must be buildable using
-cmake and make!
+-   Updates the 3 errors:
 
-More information is only accessible by people who are already enrolled in Term 2
-of CarND. If you are enrolled, see [the project page](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/f1820894-8322-4bb3-81aa-b26b3c6dcbaf/lessons/e8235395-22dd-4b87-88e0-d108c5e5bbf4/concepts/6a4d8d42-6a04-4aa6-b284-1697c0fd6562)
-for instructions and the project rubric.
+    -   d\_error = cte - p\_error
 
-## Hints!
+    -   i\_error = i\_error + cte
 
-* You don't have to follow this directory structure, but if you do, your work
-  will span all of the .cpp files here. Keep an eye out for TODOs.
+    -   p\_error = cte
 
-## Call for IDE Profiles Pull Requests
+-   Calculates the total error ( u(t) ):
 
-Help your fellow students!
+    -   p\_error \* Kp + d\_error \* Kd + i\_error \* Ki
 
-We decided to create Makefiles with cmake to keep this project as platform
-agnostic as possible. Similarly, we omitted IDE profiles in order to we ensure
-that students don't feel pressured to use one IDE or another.
+**PID for speed**
 
-However! I'd love to help people get up and running with their IDEs of choice.
-If you've created a profile for an IDE that you think other students would
-appreciate, we'd love to have you add the requisite profile files and
-instructions to ide_profiles/. For example if you wanted to add a VS Code
-profile, you'd add:
+A PID controller was enabled to keep speed constant around 32MPH. This
+was necessary to optimize the steer PID controller values, so that the
+car would not be accel/braking at the same time as steering. The speed
+PID was set to Kp=0.1 Ki=0 Kd=0 and the target speed to 35mph.
 
-* /ide_profiles/vscode/.vscode
-* /ide_profiles/vscode/README.md
+**PID constants optimization**
 
-The README should explain what the profile does, how to take advantage of it,
-and how to install it.
+The PID constants were found using a Global parameter search:
 
-Frankly, I've never been involved in a project with multiple IDE profiles
-before. I believe the best way to handle this would be to keep them out of the
-repo root to avoid clutter. My expectation is that most profiles will include
-instructions to copy files to a new location to get picked up by the IDE, but
-that's just a guess.
+-   20 x 20 Kp and Kd grid (Ki was assumed to be small, since there is
+    not systemic bias on the car)
 
-One last note here: regardless of the IDE used, every submitted project must
-still be compilable with cmake and make./
+-   Kp ranges from 0 to 1
+
+-   Kd ranges from 0 to 4
+
+Main.cpp will perform the global search by:
+
+1-*ENABLE LINE* 48 if (iter == 0 && step ==0 ){pid.Init(0.00, 0.001,
+0.00);}
+
+2-*ENABLE LINES* 75-76:
+
+> if (step ==0 && iter &gt; 0 ){pid.Init(pid.Kp + .05, pid.Ki, pid.Kd);}
+>
+> if (step ==0 && iter &gt; 0 && (iter % 20 == 0)){pid.Init(0.00,
+> pid.Ki, pid.Kd + .25);}
+
+Main.cpp will loop thru all the combinations of Kp and Kd and will reset
+the simulator at the end of them. If the car leaves the track (very
+large CTE) or is doing circles stuck on the terrain (very small speed),
+the iteration is not valid, and the search moves on to the next set of
+Kp/Kd:
+
+![](./media/image4.jpeg)
+
+After running the global search for 400 combinations, the following
+function is obtained:
+
+![](./media/image5.png)
+
+![](./media/image6.png)
+
+The 3D plot shows the mean squared CTE as a function of Kp and Kd. From
+the plot we can tell that the function keeps getting smaller as Kd gets
+larger, for a range of Kp \~ 0.15 – 0.75.
+
+The solution I picked was Kp=0.15 and Kd=1.75. It is implemented on :
+
+*LINE49* pid.Init(0.15, 0.001, 1.75); // USE this line if not GLOBAL
+optimization
+
+**Conclusions**
+
+-   A global search for Kp and Kd was able to return good params for
+    going around the loop without leaving the track. It may be
+    computationally inneficient, but it returns a map that can be used
+    to make sense of the results.
+
+-   There may be different optimum values for other speeds (much higher
+    and lower), that will have to be tuned too.
+
+-   Frequency of oscillation may to be to high (too responsive) for high
+    values of Kp. This may be uncomfortable for passengers.
+
+
