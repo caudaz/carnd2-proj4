@@ -44,7 +44,7 @@ int main()
 
   PID pid;
   // TODO: Initialize the pid variable.
-  
+  // Global Optimization
   //if (iter == 0 && step ==0 ){pid.Init(0.00, 0.001, 0.00);}
   pid.Init(0.15, 0.001, 1.75); // USE this line if not GLOBAL optimization
   
