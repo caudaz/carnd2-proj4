@@ -1,0 +1,664 @@
+root@fx8350:/mnt/c/UDACITY/TERM2/carnd2-proj4/build# ./pid
+Listening to port 4567
+*********** ITER=0 ***********  PID Kp=0 PID Ki=0.001 PID Kd=0 MeanE2=1.49007
+mean_error_squared_best=1.49007 kp_best=0 ki_best=0.001 kd_best=0
+*********** ITER=1 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=0 MeanE2=1.13211
+mean_error_squared_best=1.13211 kp_best=0.05 ki_best=0.001 kd_best=0
+*********** ITER=2 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=0 MeanE2=1.29835
+mean_error_squared_best=1.13211 kp_best=0.05 ki_best=0.001 kd_best=0
+*********** ITER=3 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=0 MeanE2=1.42427
+mean_error_squared_best=1.13211 kp_best=0.05 ki_best=0.001 kd_best=0
+*********** ITER=4 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=0 MeanE2=1.42537
+mean_error_squared_best=1.13211 kp_best=0.05 ki_best=0.001 kd_best=0
+*********** ITER=5 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=0 MeanE2=1.32232
+mean_error_squared_best=1.13211 kp_best=0.05 ki_best=0.001 kd_best=0
+*********** ITER=6 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=0 MeanE2=1.21946
+mean_error_squared_best=1.13211 kp_best=0.05 ki_best=0.001 kd_best=0
+*********** ITER=7 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=0 MeanE2=1.1233
+mean_error_squared_best=1.1233 kp_best=0.35 ki_best=0.001 kd_best=0
+*********** ITER=8 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=0 MeanE2=0.98006
+mean_error_squared_best=0.98006 kp_best=0.4 ki_best=0.001 kd_best=0
+*********** ITER=9 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=0 MeanE2=0.975188
+mean_error_squared_best=0.975188 kp_best=0.45 ki_best=0.001 kd_best=0
+*********** ITER=10 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=0 MeanE2=0.891275
+mean_error_squared_best=0.891275 kp_best=0.5 ki_best=0.001 kd_best=0
+*********** ITER=11 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=0 MeanE2=1.32886
+mean_error_squared_best=0.891275 kp_best=0.5 ki_best=0.001 kd_best=0
+*********** ITER=12 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=0 MeanE2=1.26141
+mean_error_squared_best=0.891275 kp_best=0.5 ki_best=0.001 kd_best=0
+*********** ITER=13 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=0 MeanE2=1.24513
+mean_error_squared_best=0.891275 kp_best=0.5 ki_best=0.001 kd_best=0
+*********** ITER=14 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=0 MeanE2=1.27652
+mean_error_squared_best=0.891275 kp_best=0.5 ki_best=0.001 kd_best=0
+*********** ITER=15 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=0 MeanE2=0.971231
+mean_error_squared_best=0.891275 kp_best=0.5 ki_best=0.001 kd_best=0
+*********** ITER=16 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=0 MeanE2=0.827833
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=17 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=0 MeanE2=0.878494
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=18 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=0 MeanE2=0.855579
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=19 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=0 MeanE2=0.87549
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=20 ***********  PID Kp=0 PID Ki=0.001 PID Kd=0.25 MeanE2=1.51003
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=21 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=0.25 MeanE2=1.42344
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=22 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=0.25 MeanE2=1.37625
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=23 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=0.25 MeanE2=1.22455
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=24 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=0.25 MeanE2=1.28212
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=25 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=0.25 MeanE2=1.28094
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=26 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=0.25 MeanE2=1.2606
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=27 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=0.25 MeanE2=1.11539
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=28 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=0.25 MeanE2=1.1082
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=29 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=0.25 MeanE2=0.983634
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=30 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=0.25 MeanE2=0.927177
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=31 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=0.25 MeanE2=0.923798
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=32 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=0.25 MeanE2=0.92087
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=33 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=0.25 MeanE2=0.891708
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=34 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=0.25 MeanE2=0.934386
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=35 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=0.25 MeanE2=0.928972
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=36 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=0.25 MeanE2=1.08122
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=37 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=0.25 MeanE2=1.06019
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=38 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=0.25 MeanE2=1.21111
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=39 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=0.25 MeanE2=1.24257
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=40 ***********  PID Kp=0 PID Ki=0.001 PID Kd=0.5 MeanE2=1.51386
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=41 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=0.5 MeanE2=1.19924
+mean_error_squared_best=0.827833 kp_best=0.8 ki_best=0.001 kd_best=0
+*********** ITER=42 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=0.5 MeanE2=0.799986
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=43 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=0.5 MeanE2=1.66835
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=44 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=0.5 MeanE2=1.47645
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=45 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=0.5 MeanE2=1.40352
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=46 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=0.5 MeanE2=1.0204
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=47 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=0.5 MeanE2=1.17942
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=48 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=0.5 MeanE2=1.16354
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=49 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=0.5 MeanE2=1.01806
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=50 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=0.5 MeanE2=0.877217
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=51 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=0.5 MeanE2=0.846569
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=52 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=0.5 MeanE2=0.863035
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=53 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=0.5 MeanE2=0.910589
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=54 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=0.5 MeanE2=1.14914
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=55 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=0.5 MeanE2=0.826347
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=56 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=0.5 MeanE2=0.806663
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=57 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=0.5 MeanE2=0.906011
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=58 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=0.5 MeanE2=0.943267
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=59 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=0.5 MeanE2=0.996711
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=60 ***********  PID Kp=0 PID Ki=0.001 PID Kd=0.75 MeanE2=1.96482
+mean_error_squared_best=0.799986 kp_best=0.1 ki_best=0.001 kd_best=0.5
+*********** ITER=61 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=0.75 MeanE2=0.407802
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=62 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=0.75 MeanE2=0.752372
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=63 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=0.75 MeanE2=1.18355
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=64 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=0.75 MeanE2=1.05543
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=65 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=0.75 MeanE2=1.32926
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=66 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=0.75 MeanE2=1.19616
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=67 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=0.75 MeanE2=1.06148
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=68 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=0.75 MeanE2=1.05875
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=69 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=0.75 MeanE2=0.933373
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=70 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=0.75 MeanE2=0.898099
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=71 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=0.75 MeanE2=1.06082
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=72 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=0.75 MeanE2=0.946469
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=73 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=0.75 MeanE2=0.800275
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=74 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=0.75 MeanE2=0.754448
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=75 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=0.75 MeanE2=0.778703
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=76 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=0.75 MeanE2=1.00953
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=77 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=0.75 MeanE2=1.36661
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=78 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=0.75 MeanE2=0.966582
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=79 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=0.75 MeanE2=0.842826
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=80 ***********  PID Kp=0 PID Ki=0.001 PID Kd=1 MeanE2=1.60782
+mean_error_squared_best=0.407802 kp_best=0.05 ki_best=0.001 kd_best=0.75
+*********** ITER=81 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=1 MeanE2=0.321428
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=82 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=1 MeanE2=0.691269
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=83 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=1 MeanE2=0.419377
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=84 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=1 MeanE2=0.567313
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=85 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=1 MeanE2=1.19361
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=86 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=1 MeanE2=0.969799
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=87 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=1 MeanE2=1.51146
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=88 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=1 MeanE2=1.06283
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=89 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=1 MeanE2=0.949698
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=90 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=1 MeanE2=0.857597
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=91 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=1 MeanE2=0.767423
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=92 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=1 MeanE2=0.719839
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=93 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=1 MeanE2=0.997559
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=94 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=1 MeanE2=1.10357
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=95 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=1 MeanE2=1.02253
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=96 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=1 MeanE2=0.733957
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=97 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=1 MeanE2=0.807931
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=98 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=1 MeanE2=0.954176
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=99 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=1 MeanE2=1.20337
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=100 ***********  PID Kp=0 PID Ki=0.001 PID Kd=1.25 MeanE2=1.96712
+mean_error_squared_best=0.321428 kp_best=0.05 ki_best=0.001 kd_best=1
+*********** ITER=101 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=1.25 MeanE2=0.301544
+mean_error_squared_best=0.301544 kp_best=0.05 ki_best=0.001 kd_best=1.25
+*********** ITER=102 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=1.25 MeanE2=0.571465
+mean_error_squared_best=0.301544 kp_best=0.05 ki_best=0.001 kd_best=1.25
+*********** ITER=103 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=1.25 MeanE2=0.335962
+mean_error_squared_best=0.301544 kp_best=0.05 ki_best=0.001 kd_best=1.25
+*********** ITER=104 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=1.25 MeanE2=0.270421
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=105 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=1.25 MeanE2=0.323888
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=106 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=1.25 MeanE2=0.617656
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=107 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=1.25 MeanE2=0.748631
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=108 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=1.25 MeanE2=0.990337
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=109 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=1.25 MeanE2=1.00541
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=110 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=1.25 MeanE2=0.842958
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=111 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=1.25 MeanE2=0.683066
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=112 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=1.25 MeanE2=0.68618
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=113 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=1.25 MeanE2=0.686288
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=114 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=1.25 MeanE2=0.752919
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=115 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=1.25 MeanE2=0.953419
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=116 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=1.25 MeanE2=0.886017
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=117 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=1.25 MeanE2=1.06615
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=118 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=1.25 MeanE2=0.717644
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=119 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=1.25 MeanE2=0.794522
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=120 ***********  PID Kp=0 PID Ki=0.001 PID Kd=1.5 MeanE2=1.53599
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=121 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=1.5 MeanE2=0.830436
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=122 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=1.5 MeanE2=0.543717
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=123 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=1.5 MeanE2=0.292388
+mean_error_squared_best=0.270421 kp_best=0.2 ki_best=0.001 kd_best=1.25
+*********** ITER=124 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=1.5 MeanE2=0.234052
+mean_error_squared_best=0.234052 kp_best=0.2 ki_best=0.001 kd_best=1.5
+*********** ITER=125 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=1.5 MeanE2=0.226796
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=126 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=1.5 MeanE2=0.27024
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=127 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=1.5 MeanE2=0.628719
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=128 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=1.5 MeanE2=0.580946
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=129 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=1.5 MeanE2=0.519308
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=130 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=1.5 MeanE2=0.914127
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=131 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=1.5 MeanE2=0.872742
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=132 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=1.5 MeanE2=0.431812
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=133 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=1.5 MeanE2=0.641505
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=134 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=1.5 MeanE2=0.608248
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=135 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=1.5 MeanE2=0.917459
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=136 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=1.5 MeanE2=0.780538
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=137 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=1.5 MeanE2=0.761908
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=138 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=1.5 MeanE2=0.730657
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=139 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=1.5 MeanE2=0.901873
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=140 ***********  PID Kp=0 PID Ki=0.001 PID Kd=1.75 MeanE2=1.63727
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=141 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=1.75 MeanE2=0.801458
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=142 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=1.75 MeanE2=0.511621
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=143 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=1.75 MeanE2=0.283913
+mean_error_squared_best=0.226796 kp_best=0.25 ki_best=0.001 kd_best=1.5
+*********** ITER=144 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=1.75 MeanE2=0.198022
+mean_error_squared_best=0.198022 kp_best=0.2 ki_best=0.001 kd_best=1.75
+*********** ITER=145 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=1.75 MeanE2=0.193247
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=146 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=1.75 MeanE2=0.210752
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=147 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=1.75 MeanE2=0.309148
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=148 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=1.75 MeanE2=0.425711
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=149 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=1.75 MeanE2=0.468981
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=150 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=1.75 MeanE2=0.564428
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=151 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=1.75 MeanE2=0.792776
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=152 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=1.75 MeanE2=0.582387
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=153 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=1.75 MeanE2=0.570159
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=154 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=1.75 MeanE2=0.79707
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=155 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=1.75 MeanE2=0.735729
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=156 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=1.75 MeanE2=0.839666
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=157 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=1.75 MeanE2=0.651441
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=158 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=1.75 MeanE2=0.776219
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=159 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=1.75 MeanE2=0.801767
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=160 ***********  PID Kp=0 PID Ki=0.001 PID Kd=2 MeanE2=1.44099
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=161 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=2 MeanE2=1.03612
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=162 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=2 MeanE2=0.495947
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=163 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=2 MeanE2=0.281284
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=164 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=2 MeanE2=0.199031
+mean_error_squared_best=0.193247 kp_best=0.25 ki_best=0.001 kd_best=1.75
+*********** ITER=165 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=2 MeanE2=0.182327
+mean_error_squared_best=0.182327 kp_best=0.25 ki_best=0.001 kd_best=2
+*********** ITER=166 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=2 MeanE2=0.1598
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=167 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=2 MeanE2=0.200495
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=168 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=2 MeanE2=0.203152
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=169 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=2 MeanE2=0.23894
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=170 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=2 MeanE2=0.376483
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=171 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=2 MeanE2=0.36604
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=172 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=2 MeanE2=0.677449
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=173 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=2 MeanE2=0.701823
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=174 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=2 MeanE2=0.722955
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=175 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=2 MeanE2=0.966441
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=176 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=2 MeanE2=0.64266
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=177 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=2 MeanE2=1.08847
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=178 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=2 MeanE2=0.799443
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=179 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=2 MeanE2=0.596756
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=180 ***********  PID Kp=0 PID Ki=0.001 PID Kd=2.25 MeanE2=1.53457
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=181 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=2.25 MeanE2=0.98569
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=182 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=2.25 MeanE2=0.480495
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=183 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=2.25 MeanE2=0.255062
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=184 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=2.25 MeanE2=0.185792
+mean_error_squared_best=0.1598 kp_best=0.3 ki_best=0.001 kd_best=2
+*********** ITER=185 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=2.25 MeanE2=0.158027
+mean_error_squared_best=0.158027 kp_best=0.25 ki_best=0.001 kd_best=2.25
+*********** ITER=186 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=2.25 MeanE2=0.141393
+mean_error_squared_best=0.141393 kp_best=0.3 ki_best=0.001 kd_best=2.25
+*********** ITER=187 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=2.25 MeanE2=0.156504
+mean_error_squared_best=0.141393 kp_best=0.3 ki_best=0.001 kd_best=2.25
+*********** ITER=188 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=2.25 MeanE2=0.145556
+mean_error_squared_best=0.141393 kp_best=0.3 ki_best=0.001 kd_best=2.25
+*********** ITER=189 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=2.25 MeanE2=0.144704
+mean_error_squared_best=0.141393 kp_best=0.3 ki_best=0.001 kd_best=2.25
+*********** ITER=190 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=2.25 MeanE2=0.138489
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=191 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=2.25 MeanE2=0.175977
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=192 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=2.25 MeanE2=0.697869
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=193 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=2.25 MeanE2=0.860697
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=194 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=2.25 MeanE2=0.656726
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=195 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=2.25 MeanE2=0.525494
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=196 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=2.25 MeanE2=0.713572
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=197 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=2.25 MeanE2=0.836966
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=198 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=2.25 MeanE2=0.764587
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=199 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=2.25 MeanE2=0.693744
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=200 ***********  PID Kp=0 PID Ki=0.001 PID Kd=2.5 MeanE2=0.69914
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=201 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=2.5 MeanE2=1.18377
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=202 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=2.5 MeanE2=0.455549
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=203 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=2.5 MeanE2=0.254954
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=204 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=2.5 MeanE2=0.187057
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=205 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=2.5 MeanE2=0.152758
+mean_error_squared_best=0.138489 kp_best=0.5 ki_best=0.001 kd_best=2.25
+*********** ITER=206 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=2.5 MeanE2=0.127256
+mean_error_squared_best=0.127256 kp_best=0.3 ki_best=0.001 kd_best=2.5
+*********** ITER=207 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=2.5 MeanE2=0.124557
+mean_error_squared_best=0.124557 kp_best=0.35 ki_best=0.001 kd_best=2.5
+*********** ITER=208 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=2.5 MeanE2=0.118781
+mean_error_squared_best=0.118781 kp_best=0.4 ki_best=0.001 kd_best=2.5
+*********** ITER=209 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=2.5 MeanE2=0.117273
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=210 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=2.5 MeanE2=0.117631
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=211 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=2.5 MeanE2=0.159933
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=212 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=2.5 MeanE2=0.608193
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=213 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=2.5 MeanE2=0.450115
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=214 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=2.5 MeanE2=0.366422
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=215 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=2.5 MeanE2=0.418484
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=216 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=2.5 MeanE2=0.275437
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=217 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=2.5 MeanE2=0.649875
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=218 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=2.5 MeanE2=0.572441
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=219 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=2.5 MeanE2=0.675199
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=220 ***********  PID Kp=0 PID Ki=0.001 PID Kd=2.75 MeanE2=0.901287
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=221 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=2.75 MeanE2=1.17599
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=222 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=2.75 MeanE2=0.456162
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=223 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=2.75 MeanE2=0.258223
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=224 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=2.75 MeanE2=0.177154
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=225 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=2.75 MeanE2=0.143302
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=226 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=2.75 MeanE2=0.11992
+mean_error_squared_best=0.117273 kp_best=0.45 ki_best=0.001 kd_best=2.5
+*********** ITER=227 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=2.75 MeanE2=0.106362
+mean_error_squared_best=0.106362 kp_best=0.35 ki_best=0.001 kd_best=2.75
+*********** ITER=228 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=2.75 MeanE2=0.102481
+mean_error_squared_best=0.102481 kp_best=0.4 ki_best=0.001 kd_best=2.75
+*********** ITER=229 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=2.75 MeanE2=0.100522
+mean_error_squared_best=0.100522 kp_best=0.45 ki_best=0.001 kd_best=2.75
+*********** ITER=230 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=2.75 MeanE2=0.0989609
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=231 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=2.75 MeanE2=0.104355
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=232 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=2.75 MeanE2=0.140501
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=233 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=2.75 MeanE2=0.417808
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=234 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=2.75 MeanE2=0.385657
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=235 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=2.75 MeanE2=0.39929
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=236 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=2.75 MeanE2=0.261492
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=237 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=2.75 MeanE2=0.31081
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=238 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=2.75 MeanE2=0.419387
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=239 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=2.75 MeanE2=0.529417
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=240 ***********  PID Kp=0 PID Ki=0.001 PID Kd=3 MeanE2=1.24529
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=241 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=3 MeanE2=1.18417
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=242 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=3 MeanE2=0.449567
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=243 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=3 MeanE2=0.25769
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=244 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=3 MeanE2=0.181357
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=245 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=3 MeanE2=0.144051
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=246 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=3 MeanE2=0.114591
+mean_error_squared_best=0.0989609 kp_best=0.5 ki_best=0.001 kd_best=2.75
+*********** ITER=247 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=3 MeanE2=0.0982639
+mean_error_squared_best=0.0982639 kp_best=0.35 ki_best=0.001 kd_best=3
+*********** ITER=248 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=3 MeanE2=0.0938165
+mean_error_squared_best=0.0938165 kp_best=0.4 ki_best=0.001 kd_best=3
+*********** ITER=249 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=3 MeanE2=0.0860458
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=250 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=3 MeanE2=0.0872115
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=251 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=3 MeanE2=0.0906874
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=252 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=3 MeanE2=0.112419
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=253 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=3 MeanE2=0.429164
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=254 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=3 MeanE2=0.347093
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=255 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=3 MeanE2=0.346059
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=256 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=3 MeanE2=0.250925
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=257 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=3 MeanE2=0.306766
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=258 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=3 MeanE2=0.335774
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=259 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=3 MeanE2=0.41097
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=260 ***********  PID Kp=0 PID Ki=0.001 PID Kd=3.25 MeanE2=1.11507
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=261 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=3.25 MeanE2=1.17649
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=262 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=3.25 MeanE2=0.442418
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=263 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=3.25 MeanE2=0.255025
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=264 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=3.25 MeanE2=0.177164
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=265 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=3.25 MeanE2=0.12962
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=266 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=3.25 MeanE2=0.113178
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=267 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=3.25 MeanE2=0.096335
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=268 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=3.25 MeanE2=0.0894702
+mean_error_squared_best=0.0860458 kp_best=0.45 ki_best=0.001 kd_best=3
+*********** ITER=269 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=3.25 MeanE2=0.0830067
+mean_error_squared_best=0.0830067 kp_best=0.45 ki_best=0.001 kd_best=3.25
+*********** ITER=270 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=3.25 MeanE2=0.0794883
+mean_error_squared_best=0.0794883 kp_best=0.5 ki_best=0.001 kd_best=3.25
+*********** ITER=271 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=3.25 MeanE2=0.0790857
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=272 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=3.25 MeanE2=0.0999532
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=273 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=3.25 MeanE2=0.169456
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=274 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=3.25 MeanE2=0.342233
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=275 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=3.25 MeanE2=0.420847
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=276 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=3.25 MeanE2=0.254546
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=277 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=3.25 MeanE2=0.338434
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=278 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=3.25 MeanE2=0.265523
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=279 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=3.25 MeanE2=0.270093
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=280 ***********  PID Kp=0 PID Ki=0.001 PID Kd=3.5 MeanE2=1.8159
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=281 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=3.5 MeanE2=1.27163
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=282 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=3.5 MeanE2=0.431693
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=283 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=3.5 MeanE2=0.259293
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=284 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=3.5 MeanE2=0.182814
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=285 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=3.5 MeanE2=0.129011
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=286 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=3.5 MeanE2=0.11169
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=287 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=3.5 MeanE2=0.095254
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=288 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=3.5 MeanE2=0.0846908
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=289 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=3.5 MeanE2=0.0795963
+mean_error_squared_best=0.0790857 kp_best=0.55 ki_best=0.001 kd_best=3.25
+*********** ITER=290 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=3.5 MeanE2=0.0753744
+mean_error_squared_best=0.0753744 kp_best=0.5 ki_best=0.001 kd_best=3.5
+*********** ITER=291 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=3.5 MeanE2=0.0728622
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=292 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=3.5 MeanE2=0.0820255
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=293 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=3.5 MeanE2=0.111038
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=294 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=3.5 MeanE2=0.30029
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=295 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=3.5 MeanE2=0.374227
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=296 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=3.5 MeanE2=0.293952
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=297 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=3.5 MeanE2=0.287372
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=298 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=3.5 MeanE2=0.267663
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=299 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=3.5 MeanE2=0.230136
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=300 ***********  PID Kp=0 PID Ki=0.001 PID Kd=3.75 MeanE2=1.59141
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=301 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=3.75 MeanE2=0.677276
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=302 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=3.75 MeanE2=0.453861
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=303 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=3.75 MeanE2=0.249083
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=304 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=3.75 MeanE2=0.178741
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=305 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=3.75 MeanE2=0.128844
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=306 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=3.75 MeanE2=0.111102
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=307 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=3.75 MeanE2=0.0908329
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=308 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=3.75 MeanE2=0.0825976
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=309 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=3.75 MeanE2=0.0766708
+mean_error_squared_best=0.0728622 kp_best=0.55 ki_best=0.001 kd_best=3.5
+*********** ITER=310 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=3.75 MeanE2=0.069845
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=311 ***********  PID Kp=0.55 PID Ki=0.001 PID Kd=3.75 MeanE2=0.0713581
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=312 ***********  PID Kp=0.6 PID Ki=0.001 PID Kd=3.75 MeanE2=0.0763948
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=313 ***********  PID Kp=0.65 PID Ki=0.001 PID Kd=3.75 MeanE2=0.0872106
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=314 ***********  PID Kp=0.7 PID Ki=0.001 PID Kd=3.75 MeanE2=0.399318
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=315 ***********  PID Kp=0.75 PID Ki=0.001 PID Kd=3.75 MeanE2=0.405265
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=316 ***********  PID Kp=0.8 PID Ki=0.001 PID Kd=3.75 MeanE2=0.359684
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=317 ***********  PID Kp=0.85 PID Ki=0.001 PID Kd=3.75 MeanE2=0.412351
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=318 ***********  PID Kp=0.9 PID Ki=0.001 PID Kd=3.75 MeanE2=0.324598
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=319 ***********  PID Kp=0.95 PID Ki=0.001 PID Kd=3.75 MeanE2=0.284321
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=320 ***********  PID Kp=0 PID Ki=0.001 PID Kd=4 MeanE2=2.23362
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=321 ***********  PID Kp=0.05 PID Ki=0.001 PID Kd=4 MeanE2=0.887016
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=322 ***********  PID Kp=0.1 PID Ki=0.001 PID Kd=4 MeanE2=0.463865
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=323 ***********  PID Kp=0.15 PID Ki=0.001 PID Kd=4 MeanE2=0.246025
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=324 ***********  PID Kp=0.2 PID Ki=0.001 PID Kd=4 MeanE2=0.176081
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=325 ***********  PID Kp=0.25 PID Ki=0.001 PID Kd=4 MeanE2=0.134855
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=326 ***********  PID Kp=0.3 PID Ki=0.001 PID Kd=4 MeanE2=0.104668
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=327 ***********  PID Kp=0.35 PID Ki=0.001 PID Kd=4 MeanE2=0.0916869
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=328 ***********  PID Kp=0.4 PID Ki=0.001 PID Kd=4 MeanE2=0.077167
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=329 ***********  PID Kp=0.45 PID Ki=0.001 PID Kd=4 MeanE2=0.0729215
+mean_error_squared_best=0.069845 kp_best=0.5 ki_best=0.001 kd_best=3.75
+*********** ITER=330 ***********  PID Kp=0.5 PID Ki=0.001 PID Kd=4 MeanE2=0.0694544
+mean_error_squared_best=0.0694544 kp_best=0.5 ki_best=0.001 kd_best=4
