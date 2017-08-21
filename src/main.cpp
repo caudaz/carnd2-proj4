@@ -45,8 +45,8 @@ int main()
   PID pid;
   // TODO: Initialize the pid variable.
   
-  if (iter == 0 && step ==0 ){pid.Init(0.00, 0.001, 0.00);}
-  //pid.Init(0.05, 0.001, 1.00);
+  //if (iter == 0 && step ==0 ){pid.Init(0.00, 0.001, 0.00);}
+  pid.Init(0.5, 0.001, 4.00); // USE this line if not GLOBAL optimization
   
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
@@ -72,8 +72,8 @@ int main()
           */
 		  
 		  // Global Optimization
-		  if (step ==0 && iter > 0 ){pid.Init(pid.Kp + .05, pid.Ki, pid.Kd);}
-		  if (step ==0 && iter > 0 && (iter % 20 == 0)){pid.Init(0.00, pid.Ki, pid.Kd + .25);}
+		  //if (step ==0 && iter > 0 ){pid.Init(pid.Kp + .05, pid.Ki, pid.Kd);}
+		  //if (step ==0 && iter > 0 && (iter % 20 == 0)){pid.Init(0.00, pid.Ki, pid.Kd + .25);}
 
           // Steer PID		  
 		  pid.UpdateError(cte);
