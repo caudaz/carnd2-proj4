@@ -44,8 +44,10 @@ int main()
 
   PID pid;
   // TODO: Initialize the pid variable.
-  if (iter == 0 && step ==0 ){pid.Init(0.00, 0.001, 0.00);std::cout << "hi0" << std::endl;}
-
+  
+  if (iter == 0 && step ==0 ){pid.Init(0.00, 0.001, 0.00);}
+  //pid.Init(0.05, 0.001, 1.00);
+  
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
     // The 4 signifies a websocket message
@@ -68,8 +70,10 @@ int main()
           * NOTE: Feel free to play around with the throttle and speed. Maybe use
           * another PID controller to control the speed!
           */
+		  
+		  // Global Optimization
 		  if (step ==0 && iter > 0 ){pid.Init(pid.Kp + .05, pid.Ki, pid.Kd);}
-		  if (step ==0 && iter > 0 && (iter % 50 == 0)){pid.Init(0.00, pid.Ki, pid.Kd + .05);}
+		  if (step ==0 && iter > 0 && (iter % 20 == 0)){pid.Init(0.00, pid.Ki, pid.Kd + .25);}
 
           // Steer PID		  
 		  pid.UpdateError(cte);
@@ -88,7 +92,7 @@ int main()
 
           if (step == 0){
 			 std::cout << "*********** ITER=" << iter
-			           << " ***********  PID Kp=" << pid.Kp << " PID Ki=" << pid.Ki << " PID Kd=" << pid.Kd << std::endl;	  
+			           << " ***********  PID Kp=" << pid.Kp << " PID Ki=" << pid.Ki << " PID Kd=" << pid.Kd;	  
 		  }
 
           // Error metric
@@ -117,6 +121,7 @@ int main()
           // reset to a new iteration if:
 		  // step>1000 or outside track or slow speed (outside track most likely) 
 		  if (step > 1600 || (fabs(cte)>3.0&&step>50) || (fabs(speed)<4.0 && step>50)){
+			  std::cout << " MeanE2=" <<  mean_error_squared <<  std::endl;
 			  std::string reset_msg = "42[\"reset\",{}]";
 			  ws.send(reset_msg.data(), reset_msg.length(), uWS::OpCode::TEXT); 
               step = 0;	
@@ -161,7 +166,7 @@ int main()
   });
 
   h.onConnection([&h](uWS::WebSocket<uWS::SERVER> ws, uWS::HttpRequest req) {
-    std::cout << "Connected!!!" << std::endl;
+    //std::cout << "Connected!!!" << std::endl;
   });
 
   h.onDisconnection([&h](uWS::WebSocket<uWS::SERVER> ws, int code, char *message, size_t length) {
