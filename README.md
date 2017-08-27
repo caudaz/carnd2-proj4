@@ -1,16 +1,16 @@
-**Self-Driving Car Engineer Nanodegree**
+# **Self-Driving Car Engineer Nanodegree** #
 
-**Term2 – Project4: PID Controller**
+# **Term2 – Project4: PID Controller** #
 
 ![](./media/image1.png)
 
-**INTRODUCTION**
+## **INTRODUCTION** ##
 
 The purpose of the project is to build a PID controller for UDACITY’s
 car simulator. The PID controller should be able to steer the car going
 around the track loop without departing from the lane.
 
-**PID controllers**
+## **PID controllers** ##
 
 PID stands for proportional, integral, and derivative controller. They
 are used for loop feedback mechanism. Examples of PID are cruise control
@@ -25,7 +25,7 @@ steer. The control function is:
 
 These constants will be found by loop tuning.
 
-**PID implementation on C++ code**
+## **PID implementation on C++ code** ##
 
 File PID.cpp contains the PID class:
 
@@ -43,14 +43,14 @@ File PID.cpp contains the PID class:
 
     -   p\_error \* Kp + d\_error \* Kd + i\_error \* Ki
 
-**PID for speed**
+## **PID for speed** ##
 
 A PID controller was enabled to keep speed constant around 32MPH. This
 was necessary to optimize the steer PID controller values, so that the
 car would not be accel/braking at the same time as steering. The speed
 PID was set to Kp=0.1 Ki=0 Kd=0 and the target speed to 35mph.
 
-**PID constants optimization**
+## **PID constants optimization** ##
 
 The PID constants were found using a Global parameter search:
 
@@ -97,7 +97,7 @@ The solution I picked was Kp=0.15 and Kd=1.75. It is implemented on :
 *LINE49* pid.Init(0.15, 0.001, 1.75); // USE this line if not GLOBAL
 optimization
 
-**Conclusions**
+## **Conclusions** ##
 
 -   A global search for Kp and Kd was able to return good params for
     going around the loop without leaving the track. It may be
